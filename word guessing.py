@@ -5,14 +5,14 @@ words=["Articles","World","Fruits","Vegetables","Antartic","Ameliorate",
        "Finding","Dream","Developer","Particular","Searching","Individual"]
 
 guessing_game=random.choice(words)
-Failed=0
+word_failed=0
 while True:
-  guesing_word=input("Write the guessing word").strip()
+  guessing_word=input("Write the guessing word").strip()
 
-  if guesing_word==guessing_game:
+  if guessing_word==guessing_game:
     print("Congratulation, your guessing word is correct")
-    Failed+=1
-    print("Failed",Failed)
     break
   else:
     print("Sorry") 
+    word_failed+=1
+    print("Failed",word_failed)
